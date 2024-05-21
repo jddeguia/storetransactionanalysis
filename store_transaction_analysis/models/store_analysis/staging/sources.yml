@@ -1,0 +1,9 @@
+version: 2
+sources:
+- name: store-transaction-analysis
+  database: store-transaction-analysis
+  schema: store_transaction_models
+  tables:
+  - name: device_source
+  - name: store_source
+  - name: transaction_source
