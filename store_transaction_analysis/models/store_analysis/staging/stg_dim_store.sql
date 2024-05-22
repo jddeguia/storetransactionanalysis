@@ -27,7 +27,7 @@ WITH store AS (
         CAST(id AS STRING) AS store_id,
         CAST(name AS STRING) AS store_name,
         CAST(address AS STRING) AS store_address,
-        CAST(city AS STRING) AS store_city,
+        CAST(REGEXP_REPLACE(city, '[^a-zA-Z0-9 ]', '') AS STRING) AS store_city,
         CAST(country AS STRING) AS store_country,
         CAST(created_at AS TIMESTAMP) AS store_created_at,
         CAST(UPPER(typology) AS STRING) AS store_typology,
