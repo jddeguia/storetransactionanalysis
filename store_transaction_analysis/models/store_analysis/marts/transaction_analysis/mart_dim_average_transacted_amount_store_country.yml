@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: mart_dim_average_transacted_amount_store_country
+    description: (Dimension) Average transacted amount per store country.
+    columns:
+      - name: store_country
+        description: Country where the store is located.
+      - name: average_transacted_amount_in_euros
+        description: Average transacted amount in euros.
+        

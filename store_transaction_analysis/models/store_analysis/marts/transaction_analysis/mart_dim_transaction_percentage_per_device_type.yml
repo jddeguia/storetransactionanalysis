@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_dim_transaction_percentage_per_device_type
+    description: (Dimension) Transaction percentage per device type.
+    columns:
+      - name: device_type
+        description: Type of device used for the transactions.
+      - name: transaction_count
+        description: Count of transactions made using this device type.
+      - name: total_transactions
+        description: Total number of transactions.
+      - name: transaction_percentage
+        description: Percentage of transactions made using this device type.
