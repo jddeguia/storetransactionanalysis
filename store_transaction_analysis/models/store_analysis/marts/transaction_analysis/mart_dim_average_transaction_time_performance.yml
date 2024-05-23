@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: mart_dim_average_transaction_time_performance
+    description: (Dimension) Average transaction time performance per store.
+    columns:
+      - name: store_id
+        description: Unique identifier for the store.
+        tests:
+          - not_null
+      - name: store_name
+        description: Name of the store.
+      - name: average_time_minutes
+        description: Average time spent in minutes.
+      - name: average_time_hours
+        description: Average time spent in hours.
+      - name: average_time_days
+        description: Average time spent in days.
+      
+        

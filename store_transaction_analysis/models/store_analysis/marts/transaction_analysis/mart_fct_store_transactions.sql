@@ -15,7 +15,12 @@
 
 {{
     config(
-      materialized='table'
+      materialized='table',
+      partition_by={
+        "field": "transaction_created_at",
+        "data_type": "timestamp",
+        "granularity": "day"
+        }
     )
 }}
 

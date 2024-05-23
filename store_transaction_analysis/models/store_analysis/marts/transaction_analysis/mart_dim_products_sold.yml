@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: mart_dim_products_sold
+    description: (Dimension) Details of products sold including the number of transactions and total transacted amount in euros.
+    columns:
+      - name: product_name
+        description: Name of the product.
+      - name: number_of_transactions
+        description: Total number of transactions for the product.
+      - name: total_transacted_amount_in_euros
+        description: Total amount transacted in euros for the product.

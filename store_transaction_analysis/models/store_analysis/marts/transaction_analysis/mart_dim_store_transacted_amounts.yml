@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_dim_store_transacted_amounts
+    description: (Dimension) Total transacted amounts per store.
+    columns:
+      - name: store_id
+        description: Unique identifier for the store.
+        tests:
+          - not_null
+      - name: store_name
+        description: Name of the store.
+      - name: total_transacted_amount_in_euros
+        description: Total amount transacted in euros for the store.
