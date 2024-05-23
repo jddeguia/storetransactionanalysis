@@ -29,3 +29,24 @@ Our philosophy in creating models are
 - We then create mart models which is specifically used to answer our questions
 
 The following mart models we're used to answer the following questions
+> Top 10 stores per transacted amount
+
+This is answered by mart_dim_store_transacted_amounts
+
+> Top 10 products sold
+
+This is answered by mart_dim_products_sold
+
+> Average transacted amount per store typology and country
+
+This is answered by mart_dim_average_transacted_amount_store_typology and mart_dim_average_transacted_amount_store_country
+
+> Percentage of transactions per device type
+
+This is answered by mart_dim_transaction_percentage_per_device_type
+
+> Average time for a store to perform its 5 first transactions
+
+This is answered by mart_dim_average_transaction_time_performance
+
+Go to store_transaction_analysis folder to see the results from these marts. The results are on the README file
