@@ -49,4 +49,6 @@ This is answered by `mart_dim_transaction_percentage_per_device_type`
 
 This is answered by `mart_dim_average_transaction_time_performance`
 
-Go to store_transaction_analysis folder to see the results from these marts. The results are on the README file
+Go to `store_transaction_analysis` folder to see the results from these marts. The results are on the README file
+Here is the link for the results
+`https://github.com/jddeguia/storetransactionanalysis/edit/main/store_transaction_analysis/README.md`
