@@ -1,5 +1,7 @@
 ## Data Cleaning
 - there are values that we think is better to set all the strings to UPPERCASE
+- in `stg_fct_transactions`, we concatenate `product_name` and `product_name_4`
+- unnecessary special characters and whitespaces, as well as trailing strings, are eliminated
 - `stg_dim_devices` and `stg_dim_store` is joined to create `stg_dim_stores_with_devices`. This was done to enable us joining it to transaction table `stg_fct_transactions`
 - `mart_fct_store_transactions` is derived from `stg_fct_transactions`. This lists down all of the columns that we will need to answer specific questions. This is like our one big table to be derived by mart models
   
