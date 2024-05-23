@@ -28,6 +28,12 @@ Our philosophy in creating models are
 - We create staging models to clean the data in each source tables. There are unwanted special characters on some of the columns and we wish to clean them. Also, there are also values which we think is better to set them all to uppercase
 - We then create mart models which is specifically used to answer our questions
 
+Methodololgy
+- create source models (which is from the file upload)
+- create staging model from the source model. This is where we clean the source model
+- create 1 big mart model `mart_fct_store_transactions`. This mart model contains all the column that we need to answer the following questions
+- create mart models from `mart_fct_store_transactions`
+
 The following mart models we're used to answer the following questions
 > Top 10 stores per transacted amount
 
