@@ -1,6 +1,8 @@
 ## Data Cleaning
-
-
+- there are values that we think is better to set all the strings to UPPERCASE
+- `stg_dim_devices` and `stg_dim_store` is joined to create `stg_dim_stores_with_devices`. This was done to enable us joining it to transaction table `stg_fct_transactions`
+- `mart_fct_store_transactions` is derived from `stg_fct_transactions`. This lists down all of the columns that we will need to answer specific questions. This is like our one big table to be derived by mart models
+  
 ## Results 
 ### Top 10 stores per transacted amount
 This can be answered by `mart_dim_store_transacted_amounts`
@@ -53,4 +55,10 @@ Here is the result
 
 ![image](https://github.com/jddeguia/storetransactionanalysis/assets/70092528/e2913813-e466-4768-9ce1-8555c9c411cd)
 
-
+## Insights
+- Nec Ante Ltd has the most transacted amount in euros (assuming the transaction is a success)
+- The product name SITAMET GRAVIDA has the most transaction (from the given dataset) however it doesn't have the highest transacted amount. INCEPTOSHYMENAEOUS QUIS has the highest transacted amount
+- Hotel has the highest average transacted amount in euros while foodtruck has the lowest
+- If the store country is located in Vietnam, it has the highest average transacted amount. The lowest is in Chile
+- Device number 4 has the most contribution in making a transaction, while number 2 has the lowest
+- Neque Tellus PC has the quickest time to make a transaction
